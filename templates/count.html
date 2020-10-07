@@ -1,0 +1,16 @@
+<h1>WORDCOUNT</h1>
+
+<h2>Full text: {{fulltext}}</h2>
+<p> There are: {{count}} words in your text</p>
+<p> Word count: </p>
+
+{% for word, countTotal in sortedWords %}
+<div style="font-weight: bold;">
+    {{word}} - {{countTotal}}
+    </br>
+</div>
+
+{% endfor %}
+
+
+
